@@ -1,0 +1,11 @@
+asset = "spiffe://bank.example/ns/mesh/sa/recon-bot"
+
+[approval]
+approvers = ["vedulavijay"]
+min = 1
+
+[[need]]
+to = "spiffe://bank.example/ns/mesh/sa/payments-mcp"
+tools = ["transfer_funds"]
+justify = "month-end settlement posts one transfer, reviewed by treasury"
+ttl = 3600
